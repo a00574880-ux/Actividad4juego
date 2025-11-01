@@ -119,7 +119,7 @@ def world():
             if tile == 1:
                 path.up()
                 path.goto(x + 10, y + 10)
-                path.dot(2, 'white')
+                path.dot(2, 'green')
 
 
 def move():
@@ -133,7 +133,6 @@ def move():
         pacman.move(aim)
 
     index = offset(pacman)
-
     if tiles[index] == 1:
         tiles[index] = 2
         state['score'] += 1
